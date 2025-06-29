@@ -4,11 +4,11 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>성민아 생일 축하해!</title>
+        <title></title>
     </head>
     <body>
         <div>
-            생일 선물 퀴즈 : 성민이의 생일을 기념하여 윤승혁이 하고 싶었던 말은?<br>
+            생일 선물 퀴즈 : 채은이의 생일을 기념하여 윤승혁이 하고 싶었던 말은?<br>
             <input type="text" id="answer" onChange="checkAnswer()">
             <span id="result" style="color:black"></span>
         </div>
@@ -61,9 +61,9 @@
             const hint = document.getElementById('hint'+n);
             if(!hint.innerText) {
                 if(n == "1")    hint.innerText = "띄어쓰기 없이 9글자";
-                if(n == "8")    hint.innerText = "조OOOOOOOO";
-                if(n == "3")    hint.innerText = "O성OOOOOOO";
-                if(n == "5")    hint.innerText = "OO민OOOOOO";
+                if(n == "8")    hint.innerText = "이OOOOOOOO";
+                if(n == "3")    hint.innerText = "O채OOOOOOO";
+                if(n == "5")    hint.innerText = "OO은OOOOOO";
                 if(n == "10")    hint.innerText = "OOO은OOOOO";
                 if(n == "7")    hint.innerText = "OOOO바OOOO";
                 if(n == "4")    hint.innerText = "OOOOO보OOO";
@@ -78,7 +78,7 @@
         function checkAnswer() {
             const answer = document.getElementById('answer').value;
             const result = document.getElementById('result')
-            if(answer == "조성민은바보입니다") {
+            if(answer == "이채은은바보입니다") {
                 result.innerText = "정답입니다!"
                 result.getAttributeNode("style").value = "color: blue"
             }
